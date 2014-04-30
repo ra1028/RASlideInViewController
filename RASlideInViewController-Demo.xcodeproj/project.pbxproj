@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A5F2050190F9AA700ED4A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F204F190F9AA700ED4A8C /* Foundation.framework */; };
+		2A5F2052190F9AA700ED4A8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F2051190F9AA700ED4A8C /* CoreGraphics.framework */; };
+		2A5F2054190F9AA700ED4A8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F2053190F9AA700ED4A8C /* UIKit.framework */; };
+		2A5F205A190F9AA700ED4A8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F2058190F9AA700ED4A8C /* InfoPlist.strings */; };
+		2A5F205C190F9AA700ED4A8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F205B190F9AA700ED4A8C /* main.m */; };
+		2A5F2060190F9AA700ED4A8C /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F205F190F9AA700ED4A8C /* RAAppDelegate.m */; };
+		2A5F2068190F9AA700ED4A8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F2067190F9AA700ED4A8C /* Images.xcassets */; };
+		2A5F206F190F9AA700ED4A8C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F206E190F9AA700ED4A8C /* XCTest.framework */; };
+		2A5F2070190F9AA700ED4A8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F204F190F9AA700ED4A8C /* Foundation.framework */; };
+		2A5F2071190F9AA700ED4A8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F2053190F9AA700ED4A8C /* UIKit.framework */; };
+		2A5F2079190F9AA700ED4A8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F2077190F9AA700ED4A8C /* InfoPlist.strings */; };
+		2A5F207B190F9AA700ED4A8C /* RASlideInViewController_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F207A190F9AA700ED4A8C /* RASlideInViewController_DemoTests.m */; };
+		2A5F2085190F9ACA00ED4A8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F2084190F9ACA00ED4A8C /* Main.storyboard */; };
+		2A5F2088190F9ADD00ED4A8C /* RASlideInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F2087190F9ADD00ED4A8C /* RASlideInViewController.m */; };
+		2A5F208B190F9AE700ED4A8C /* RANewSlideInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F2089190F9AE700ED4A8C /* RANewSlideInViewController.m */; };
+		2A5F208E190F9AEE00ED4A8C /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F208C190F9AEE00ED4A8C /* RAViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A5F2072190F9AA700ED4A8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5F2044190F9AA700ED4A8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5F204B190F9AA700ED4A8C;
+			remoteInfo = "RASlideInViewController-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A5F204C190F9AA700ED4A8C /* RASlideInViewController-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RASlideInViewController-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5F204F190F9AA700ED4A8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2A5F2051190F9AA700ED4A8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A5F2053190F9AA700ED4A8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A5F2057190F9AA700ED4A8C /* RASlideInViewController-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RASlideInViewController-Demo-Info.plist"; sourceTree = "<group>"; };
+		2A5F2059190F9AA700ED4A8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A5F205B190F9AA700ED4A8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A5F205D190F9AA700ED4A8C /* RASlideInViewController-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RASlideInViewController-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		2A5F205E190F9AA700ED4A8C /* RAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
+		2A5F205F190F9AA700ED4A8C /* RAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
+		2A5F2067190F9AA700ED4A8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2A5F206D190F9AA700ED4A8C /* RASlideInViewController-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RASlideInViewController-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5F206E190F9AA700ED4A8C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2A5F2076190F9AA700ED4A8C /* RASlideInViewController-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RASlideInViewController-DemoTests-Info.plist"; sourceTree = "<group>"; };
+		2A5F2078190F9AA700ED4A8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2A5F207A190F9AA700ED4A8C /* RASlideInViewController_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RASlideInViewController_DemoTests.m; sourceTree = "<group>"; };
+		2A5F2084190F9ACA00ED4A8C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2A5F2086190F9ADD00ED4A8C /* RASlideInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASlideInViewController.h; sourceTree = "<group>"; };
+		2A5F2087190F9ADD00ED4A8C /* RASlideInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RASlideInViewController.m; sourceTree = "<group>"; };
+		2A5F2089190F9AE700ED4A8C /* RANewSlideInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RANewSlideInViewController.m; sourceTree = "<group>"; };
+		2A5F208A190F9AE700ED4A8C /* RANewSlideInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RANewSlideInViewController.h; sourceTree = "<group>"; };
+		2A5F208C190F9AEE00ED4A8C /* RAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; };
+		2A5F208D190F9AEE00ED4A8C /* RAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5F2049190F9AA700ED4A8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5F2052190F9AA700ED4A8C /* CoreGraphics.framework in Frameworks */,
+				2A5F2054190F9AA700ED4A8C /* UIKit.framework in Frameworks */,
+				2A5F2050190F9AA700ED4A8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5F206A190F9AA700ED4A8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5F206F190F9AA700ED4A8C /* XCTest.framework in Frameworks */,
+				2A5F2071190F9AA700ED4A8C /* UIKit.framework in Frameworks */,
+				2A5F2070190F9AA700ED4A8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5F2043190F9AA700ED4A8C = {
+			isa = PBXGroup;
+			children = (
+				2A5F2090190F9B5100ED4A8C /* RASlideInViewController */,
+				2A5F2055190F9AA700ED4A8C /* RASlideInViewController-Demo */,
+				2A5F2074190F9AA700ED4A8C /* RASlideInViewController-DemoTests */,
+				2A5F204E190F9AA700ED4A8C /* Frameworks */,
+				2A5F204D190F9AA700ED4A8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5F204D190F9AA700ED4A8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F204C190F9AA700ED4A8C /* RASlideInViewController-Demo.app */,
+				2A5F206D190F9AA700ED4A8C /* RASlideInViewController-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5F204E190F9AA700ED4A8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F204F190F9AA700ED4A8C /* Foundation.framework */,
+				2A5F2051190F9AA700ED4A8C /* CoreGraphics.framework */,
+				2A5F2053190F9AA700ED4A8C /* UIKit.framework */,
+				2A5F206E190F9AA700ED4A8C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A5F2055190F9AA700ED4A8C /* RASlideInViewController-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F205E190F9AA700ED4A8C /* RAAppDelegate.h */,
+				2A5F205F190F9AA700ED4A8C /* RAAppDelegate.m */,
+				2A5F2084190F9ACA00ED4A8C /* Main.storyboard */,
+				2A5F208D190F9AEE00ED4A8C /* RAViewController.h */,
+				2A5F208C190F9AEE00ED4A8C /* RAViewController.m */,
+				2A5F208A190F9AE700ED4A8C /* RANewSlideInViewController.h */,
+				2A5F2089190F9AE700ED4A8C /* RANewSlideInViewController.m */,
+				2A5F2067190F9AA700ED4A8C /* Images.xcassets */,
+				2A5F2056190F9AA700ED4A8C /* Supporting Files */,
+			);
+			path = "RASlideInViewController-Demo";
+			sourceTree = "<group>";
+		};
+		2A5F2056190F9AA700ED4A8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F2057190F9AA700ED4A8C /* RASlideInViewController-Demo-Info.plist */,
+				2A5F2058190F9AA700ED4A8C /* InfoPlist.strings */,
+				2A5F205B190F9AA700ED4A8C /* main.m */,
+				2A5F205D190F9AA700ED4A8C /* RASlideInViewController-Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A5F2074190F9AA700ED4A8C /* RASlideInViewController-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F207A190F9AA700ED4A8C /* RASlideInViewController_DemoTests.m */,
+				2A5F2075190F9AA700ED4A8C /* Supporting Files */,
+			);
+			path = "RASlideInViewController-DemoTests";
+			sourceTree = "<group>";
+		};
+		2A5F2075190F9AA700ED4A8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F2076190F9AA700ED4A8C /* RASlideInViewController-DemoTests-Info.plist */,
+				2A5F2077190F9AA700ED4A8C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A5F2090190F9B5100ED4A8C /* RASlideInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F2086190F9ADD00ED4A8C /* RASlideInViewController.h */,
+				2A5F2087190F9ADD00ED4A8C /* RASlideInViewController.m */,
+			);
+			name = RASlideInViewController;
+			path = "RASlideInViewController-Demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5F204B190F9AA700ED4A8C /* RASlideInViewController-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5F207E190F9AA700ED4A8C /* Build configuration list for PBXNativeTarget "RASlideInViewController-Demo" */;
+			buildPhases = (
+				2A5F2048190F9AA700ED4A8C /* Sources */,
+				2A5F2049190F9AA700ED4A8C /* Frameworks */,
+				2A5F204A190F9AA700ED4A8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RASlideInViewController-Demo";
+			productName = "RASlideInViewController-Demo";
+			productReference = 2A5F204C190F9AA700ED4A8C /* RASlideInViewController-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A5F206C190F9AA700ED4A8C /* RASlideInViewController-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5F2081190F9AA700ED4A8C /* Build configuration list for PBXNativeTarget "RASlideInViewController-DemoTests" */;
+			buildPhases = (
+				2A5F2069190F9AA700ED4A8C /* Sources */,
+				2A5F206A190F9AA700ED4A8C /* Frameworks */,
+				2A5F206B190F9AA700ED4A8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5F2073190F9AA700ED4A8C /* PBXTargetDependency */,
+			);
+			name = "RASlideInViewController-DemoTests";
+			productName = "RASlideInViewController-DemoTests";
+			productReference = 2A5F206D190F9AA700ED4A8C /* RASlideInViewController-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5F2044190F9AA700ED4A8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ryo Aoyama";
+				TargetAttributes = {
+					2A5F206C190F9AA700ED4A8C = {
+						TestTargetID = 2A5F204B190F9AA700ED4A8C;
+					};
+				};
+			};
+			buildConfigurationList = 2A5F2047190F9AA700ED4A8C /* Build configuration list for PBXProject "RASlideInViewController-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A5F2043190F9AA700ED4A8C;
+			productRefGroup = 2A5F204D190F9AA700ED4A8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5F204B190F9AA700ED4A8C /* RASlideInViewController-Demo */,
+				2A5F206C190F9AA700ED4A8C /* RASlideInViewController-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5F204A190F9AA700ED4A8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5F2085190F9ACA00ED4A8C /* Main.storyboard in Resources */,
+				2A5F2068190F9AA700ED4A8C /* Images.xcassets in Resources */,
+				2A5F205A190F9AA700ED4A8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5F206B190F9AA700ED4A8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5F2079190F9AA700ED4A8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5F2048190F9AA700ED4A8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5F208E190F9AEE00ED4A8C /* RAViewController.m in Sources */,
+				2A5F2088190F9ADD00ED4A8C /* RASlideInViewController.m in Sources */,
+				2A5F205C190F9AA700ED4A8C /* main.m in Sources */,
+				2A5F2060190F9AA700ED4A8C /* RAAppDelegate.m in Sources */,
+				2A5F208B190F9AE700ED4A8C /* RANewSlideInViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5F2069190F9AA700ED4A8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5F207B190F9AA700ED4A8C /* RASlideInViewController_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5F2073190F9AA700ED4A8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5F204B190F9AA700ED4A8C /* RASlideInViewController-Demo */;
+			targetProxy = 2A5F2072190F9AA700ED4A8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A5F2058190F9AA700ED4A8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5F2059190F9AA700ED4A8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A5F2077190F9AA700ED4A8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5F2078190F9AA700ED4A8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A5F207C190F9AA700ED4A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A5F207D190F9AA700ED4A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A5F207F190F9AA700ED4A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RASlideInViewController-Demo/RASlideInViewController-Demo-Prefix.pch";
+				INFOPLIST_FILE = "RASlideInViewController-Demo/RASlideInViewController-Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2A5F2080190F9AA700ED4A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RASlideInViewController-Demo/RASlideInViewController-Demo-Prefix.pch";
+				INFOPLIST_FILE = "RASlideInViewController-Demo/RASlideInViewController-Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2A5F2082190F9AA700ED4A8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RASlideInViewController-Demo.app/RASlideInViewController-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RASlideInViewController-Demo/RASlideInViewController-Demo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RASlideInViewController-DemoTests/RASlideInViewController-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2A5F2083190F9AA700ED4A8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RASlideInViewController-Demo.app/RASlideInViewController-Demo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RASlideInViewController-Demo/RASlideInViewController-Demo-Prefix.pch";
+				INFOPLIST_FILE = "RASlideInViewController-DemoTests/RASlideInViewController-DemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5F2047190F9AA700ED4A8C /* Build configuration list for PBXProject "RASlideInViewController-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5F207C190F9AA700ED4A8C /* Debug */,
+				2A5F207D190F9AA700ED4A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5F207E190F9AA700ED4A8C /* Build configuration list for PBXNativeTarget "RASlideInViewController-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5F207F190F9AA700ED4A8C /* Debug */,
+				2A5F2080190F9AA700ED4A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5F2081190F9AA700ED4A8C /* Build configuration list for PBXNativeTarget "RASlideInViewController-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5F2082190F9AA700ED4A8C /* Debug */,
+				2A5F2083190F9AA700ED4A8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5F2044190F9AA700ED4A8C /* Project object */;
+}
