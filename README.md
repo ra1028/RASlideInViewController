@@ -1,7 +1,7 @@
 RASlideInViewController
 =======================
 
-#### RASlideInViewController has an transition effect expressing the depth, and you can dismiss it by draging
+#### RASlideInViewController has an transition effect expressing the depth, and you can dismiss it by draging.
 
 
 ### Screen shots
@@ -50,3 +50,6 @@ Please add the library into your project, and create subclass of this class.
     
     @end
 ```
+
+### License
+RASlideInViewController is released under the MIT License, see LICENSE.txt.
