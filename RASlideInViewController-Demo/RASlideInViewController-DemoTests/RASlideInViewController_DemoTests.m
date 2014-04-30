@@ -2,7 +2,7 @@
 //  RASlideInViewController_DemoTests.m
 //  RASlideInViewController-DemoTests
 //
-//  Created by Ryo Aoyama on 4/29/14.
+//  Created by Ryo Aoyama on 5/1/14.
 //  Copyright (c) 2014 Ryo Aoyama. All rights reserved.
 //
 

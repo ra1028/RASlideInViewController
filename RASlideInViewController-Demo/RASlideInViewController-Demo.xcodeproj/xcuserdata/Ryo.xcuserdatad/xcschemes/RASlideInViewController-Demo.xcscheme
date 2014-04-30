@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A5F204B190F9AA700ED4A8C"
+               BlueprintIdentifier = "2A1C57EB1911859B007013D2"
                BuildableName = "RASlideInViewController-Demo.app"
                BlueprintName = "RASlideInViewController-Demo"
                ReferencedContainer = "container:RASlideInViewController-Demo.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A5F206C190F9AA700ED4A8C"
+               BlueprintIdentifier = "2A1C580C1911859B007013D2"
                BuildableName = "RASlideInViewController-DemoTests.xctest"
                BlueprintName = "RASlideInViewController-DemoTests"
                ReferencedContainer = "container:RASlideInViewController-Demo.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A5F204B190F9AA700ED4A8C"
+            BlueprintIdentifier = "2A1C57EB1911859B007013D2"
             BuildableName = "RASlideInViewController-Demo.app"
             BlueprintName = "RASlideInViewController-Demo"
             ReferencedContainer = "container:RASlideInViewController-Demo.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A5F204B190F9AA700ED4A8C"
+            BlueprintIdentifier = "2A1C57EB1911859B007013D2"
             BuildableName = "RASlideInViewController-Demo.app"
             BlueprintName = "RASlideInViewController-Demo"
             ReferencedContainer = "container:RASlideInViewController-Demo.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2A5F204B190F9AA700ED4A8C"
+            BlueprintIdentifier = "2A1C57EB1911859B007013D2"
             BuildableName = "RASlideInViewController-Demo.app"
             BlueprintName = "RASlideInViewController-Demo"
             ReferencedContainer = "container:RASlideInViewController-Demo.xcodeproj">

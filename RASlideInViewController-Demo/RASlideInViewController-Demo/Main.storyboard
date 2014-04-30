@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="9dF-oU-qEF">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
@@ -26,7 +26,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addNewWindow:" destination="9dF-oU-qEF" eventType="touchUpInside" id="Vjj-7S-XZf"/>
+                                    <action selector="addNewWindow:" destination="9dF-oU-qEF" eventType="touchUpInside" id="zTr-ru-vkp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeK-ga-Gbn">
@@ -38,8 +38,7 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addNewView:" destination="9dF-oU-qEF" eventType="touchUpInside" id="AQ5-2V-SYb"/>
-                                    <action selector="addNewView:" destination="71H-fW-DPt" eventType="touchUpInside" id="CjG-hZ-O0w"/>
+                                    <action selector="addNewView:" destination="9dF-oU-qEF" eventType="touchUpInside" id="8hD-ci-NEd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,14 +70,14 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addNewView:" destination="71H-fW-DPt" eventType="touchUpInside" id="Zhz-W2-0jt"/>
+                                    <action selector="addNewView:" destination="71H-fW-DPt" eventType="touchUpInside" id="Dfw-cE-eIA"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="addNewViewButton" destination="Q3B-O7-Kpp" id="paq-UM-Tvd"/>
+                        <outlet property="addNewViewButton" destination="Q3B-O7-Kpp" id="HfD-iH-bE9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Fy-FO-Cq9" userLabel="First Responder" sceneMemberID="firstResponder"/>

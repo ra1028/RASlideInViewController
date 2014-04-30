@@ -20,13 +20,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;
 }
+
 - (IBAction)addNewView:(UIButton *)sender
 {
     UIStoryboard *storyboard = self.storyboard;
     RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
+    
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
     
     [self presentViewController:slideViewController animated:NO completion:nil];
 }
