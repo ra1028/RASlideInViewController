@@ -27,6 +27,7 @@
     UIStoryboard *storyboard = self.storyboard;
     RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
     
+    //***
     self.modalPresentationStyle = UIModalPresentationCurrentContext;
     
     [self presentViewController:slideViewController animated:NO completion:nil];

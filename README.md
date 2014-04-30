@@ -18,6 +18,9 @@ Please add the library into your project, and create subclass of this class.
     UIStoryboard *storyboard = self.storyboard;
     RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
     
+    //***
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+    
     [self presentViewController:slideViewController animated:NO completion:nil];
 ```
 
