@@ -26,20 +26,20 @@
 - (IBAction)addNewView:(UIButton *)sender
 {
     UIStoryboard *storyboard = self.storyboard;
-    RANewSlideInViewController *cardViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
+    RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
     
-    [self presentViewController:cardViewController animated:NO completion:nil];
+    [self presentViewController:slideViewController animated:NO completion:nil];
 }
 
 - (IBAction)addNewWindow:(UIButton *)sender
 {
     UIStoryboard *storyboard = self.storyboard;
-    RANewSlideInViewController *cardViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
-    cardViewController.slideInDirection = RASlideInDirectionLeftToRight;
+    RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
+    slideViewController.slideInDirection = RASlideInDirectionLeftToRight;
     
     _subWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _subWindow.windowLevel = UIWindowLevelStatusBar;
-    _subWindow.rootViewController = cardViewController;
+    _subWindow.rootViewController = slideViewController;
     [_subWindow makeKeyAndVisible];
 }
 

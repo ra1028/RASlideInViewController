@@ -13,7 +13,7 @@ RASlideInViewController
 
 Please add the library into your project, and create subclass of this class.
 
-####Example
+#### Example
 ```Objective-C
     UIStoryboard *storyboard = self.storyboard;
     RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
@@ -32,7 +32,7 @@ Please add the library into your project, and create subclass of this class.
     [_subWindow makeKeyAndVisible];
 ```
 
-###Option
+#### Option
 ```Objective-C
     typedef NS_ENUM(NSInteger, RASlideViewSlideInDirection)
     {

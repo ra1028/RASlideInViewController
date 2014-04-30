@@ -18,8 +18,8 @@ typedef NS_ENUM(NSInteger, RASlideViewSlideInDirection)
 
 @interface RASlideInViewController : UIViewController
 
-@property (nonatomic, assign) CGFloat animationDuration; //recommend 0.1f - 1.0f
-@property (nonatomic, assign) CGFloat backdropViewScaleReductionRatio; //recommend 0.9f - 1.0f
+@property (nonatomic, assign) CGFloat animationDuration; //recommend 0.1f ~ 1.0f
+@property (nonatomic, assign) CGFloat backdropViewScaleReductionRatio; //recommend 0.9f ~ 1.0f
 @property (nonatomic, assign) RASlideViewSlideInDirection slideInDirection;
 
 @end
