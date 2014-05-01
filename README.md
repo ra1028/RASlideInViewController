@@ -5,11 +5,14 @@ RASlideInViewController
 
 
 ### Screen shots
-![screen shot1](https://github.com/ra1028/RASlideInViewController/raw/master/screenshots/screenshot1.png)
-![screen shot2](https://github.com/ra1028/RASlideInViewController/raw/master/screenshots/screenshot2.png)
+![screen shot1](https://github.com/ra1028/RASlideInViewController/raw/master/Assets/screenshot1.png)
+![screen shot2](https://github.com/ra1028/RASlideInViewController/raw/master/Assets/screenshot2.png)
 
 
-### Installation
+### Example animation
+![animated gif](https://github.com/ra1028/RASlideInViewController/raw/master/Assets/animation.gif)
+
+### Usage
 
 Please add the library into your project, and create subclass of this class.
 
@@ -18,8 +21,7 @@ Please add the library into your project, and create subclass of this class.
     UIStoryboard *storyboard = self.storyboard;
     RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
     
-    //***
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;  //***
     
     [self presentViewController:slideViewController animated:NO completion:nil];
 ```
