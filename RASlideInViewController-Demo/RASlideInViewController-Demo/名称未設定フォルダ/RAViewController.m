@@ -27,6 +27,8 @@
     UIStoryboard *storyboard = self.storyboard;
     RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
     
+    slideViewController.slideInDirection = RASlideInDirectionRightToLeft;
+    
     //***
     self.modalPresentationStyle = UIModalPresentationCurrentContext;
     
