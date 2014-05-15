@@ -36,8 +36,13 @@
 - (IBAction)addNewView:(UIButton *)sender
 {
     UIStoryboard *storyboard = self.storyboard;
-    RANewSlideInViewController *cardViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
+    RANewSlideInViewController *slideInViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
     
-    [self presentViewController:cardViewController animated:NO completion:nil];
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;  //***
+    
+    slideInViewController.slideInDirection = RASlideInDirectionRightToLeft;
+    slideInViewController.shiftBackDropView = YES;
+    
+    [self presentViewController:slideInViewController animated:NO completion:nil];
 }
 @end
