@@ -7,6 +7,7 @@ RASlideInViewController
 ### Screen shots
 ![screen shot1](https://github.com/ra1028/RASlideInViewController/raw/master/Assets/screenshot1.png)
 ![screen shot2](https://github.com/ra1028/RASlideInViewController/raw/master/Assets/screenshot2.png)
+![screen shot3](https://github.com/ra1028/RASlideInViewController/raw/master/Assets/screenshot3.png)
 
 
 ### Example animation
@@ -39,21 +40,23 @@ Please add the library into your project, and create subclass of this class.
 
 #### Option
 ```Objective-C
-    typedef NS_ENUM(NSInteger, RASlideViewSlideInDirection)
-    {
-        RASlideInDirectionBottomToTop,
-        RASlideInDirectionRightToLeft,
-        RASlideInDirectionTopToBottom,
-        RASlideInDirectionLeftToRight
-    };
+typedef NS_ENUM(NSInteger, RASlideViewSlideInDirection){
+    RASlideInDirectionBottomToTop,
+    RASlideInDirectionRightToLeft,
+    RASlideInDirectionTopToBottom,
+    RASlideInDirectionLeftToRight
+};
 
-    @interface RASlideInViewController : UIViewController
+@interface RASlideInViewController : UIViewController
 
-    @property (nonatomic, assign) CGFloat animationDuration; //recommend 0.1f ~ 1.0f
-    @property (nonatomic, assign) CGFloat backdropViewScaleReductionRatio; //recommend 0.9f ~ 1.0f
-    @property (nonatomic, assign) RASlideViewSlideInDirection slideInDirection;
-    
-    @end
+@property (nonatomic, assign) RASlideViewSlideInDirection slideInDirection; //default RASlideInDirectionBottomToTop;
+@property (nonatomic, assign) BOOL shiftBackDropView; //default NO
+@property (nonatomic, assign) CGFloat animationDuration; //default .3f
+@property (nonatomic, assign) CGFloat backdropViewScaleReductionRatio; //default .9f
+@property (nonatomic, assign) CGFloat shiftBackDropViewValue; //default 100.f
+@property (nonatomic, assign) CGFloat backDropViewAlpha; //default 0
+
+@end
 ```
 
 ### License
