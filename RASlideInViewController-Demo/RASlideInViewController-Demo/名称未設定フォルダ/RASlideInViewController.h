@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, RASlideViewSlideInDirection){
 @property (nonatomic, assign) BOOL shiftBackDropView; //default NO
 @property (nonatomic, assign) CGFloat animationDuration; //default .3f
 @property (nonatomic, assign) CGFloat backdropViewScaleReductionRatio; //default .9f
-@property (nonatomic, assign) CGFloat shiftBackDropViewValue;//default 100.f
+@property (nonatomic, assign) CGFloat shiftBackDropViewValue; //default 100.f
+@property (nonatomic, assign) CGFloat backDropViewAlpha; //default 0
 
 @end

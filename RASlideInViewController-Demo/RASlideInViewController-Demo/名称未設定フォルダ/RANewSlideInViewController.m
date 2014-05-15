@@ -38,10 +38,11 @@
     UIStoryboard *storyboard = self.storyboard;
     RANewSlideInViewController *slideInViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
     
-    self.modalPresentationStyle = UIModalPresentationCurrentContext;  //***
-    
     slideInViewController.slideInDirection = RASlideInDirectionRightToLeft;
     slideInViewController.shiftBackDropView = YES;
+    slideInViewController.backDropViewAlpha = .4f;
+    
+    self.modalPresentationStyle = UIModalPresentationCurrentContext;  //***
     
     [self presentViewController:slideInViewController animated:NO completion:nil];
 }

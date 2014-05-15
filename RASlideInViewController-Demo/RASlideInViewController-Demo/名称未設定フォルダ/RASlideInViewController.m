@@ -45,22 +45,26 @@
     {
         //alpha
         self.view.alpha = 1.f;
+        
+        //backDropView superview alpha 0
+        self.presentingViewController.presentingViewController.view.alpha = 0;
+        
         //animation
         [UIView animateWithDuration:_animationDuration delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             CGSize viewSize = self.view.bounds.size;
             self.view.frame = [self appearedAnimationStandbyPosition];
             self.view.frame = CGRectMake(0, 0, viewSize.width, viewSize.height);
-            self.view.window.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1.f];
+            self.view.window.backgroundColor = [UIColor colorWithWhite:0 alpha:1.f];
             //back drop view
             CGAffineTransform transform;
-            if (!_shiftBackDropViewValue) {
+            if (!_shiftBackDropView) {
                 transform = CGAffineTransformMakeScale(_backdropViewScaleReductionRatio, _backdropViewScaleReductionRatio);
             }else {
                 CGAffineTransform scale = CGAffineTransformMakeScale(_backdropViewScaleReductionRatio, _backdropViewScaleReductionRatio);
                 CGAffineTransform shift = [self shiftBackDropViewWithPercentage:0];
                 transform = CGAffineTransformConcat(scale, shift);
             }
-            _backDropView.alpha = 0;
+            _backDropView.alpha = _backDropViewAlpha;
             _backDropView.transform = transform;
         }completion:^(BOOL finished){
             _appered = YES;
@@ -78,6 +82,7 @@
     _animationDuration = .3f;
     _backdropViewScaleReductionRatio = .9f;
     _shiftBackDropViewValue = 100.f;
+    _backDropViewAlpha = 0;
 }
 
 - (void)configure
@@ -155,8 +160,6 @@
     CGPoint velocity = [sender velocityInView:self.view];
     
     switch (sender.state) {
-        case UIGestureRecognizerStateBegan:
-            break;
         case UIGestureRecognizerStateChanged:
             //transition
             [self viewTransition:translation];
@@ -266,19 +269,20 @@
 
 - (void)transformSuperViewControllerViewWithPercentage:(CGFloat)percentage
 {
-    _backDropView.alpha = percentage;
+    CGFloat alphaDiff = (1.f - _backDropViewAlpha) * (1.f - percentage);
+    _backDropView.alpha = 1.f - alphaDiff;
     CGAffineTransform transform;
     if (!_shiftBackDropView) {
         transform = CGAffineTransformMakeScale(_backdropViewScaleReductionRatio + ((1.f - _backdropViewScaleReductionRatio)*percentage), _backdropViewScaleReductionRatio + ((1.f - _backdropViewScaleReductionRatio)*percentage));
     }else {
-        CGAffineTransform scale = CGAffineTransformMakeScale(_backdropViewScaleReductionRatio + ((1.f - _backdropViewScaleReductionRatio)*percentage), _backdropViewScaleReductionRatio + ((1.f - _backdropViewScaleReductionRatio)*percentage));
+        CGAffineTransform scale = CGAffineTransformMakeScale(_backdropViewScaleReductionRatio + ((1.f - _backdropViewScaleReductionRatio) * percentage), _backdropViewScaleReductionRatio + ((1.f - _backdropViewScaleReductionRatio) * percentage));
         CGAffineTransform shift = [self shiftBackDropViewWithPercentage:percentage];
         transform = CGAffineTransformConcat(scale, shift);
     }
     _backDropView.transform = transform;
     if (!self.presentingViewController)
     {
-        self.view.window.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+        self.view.window.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
     }
 }
 
@@ -287,19 +291,19 @@
     CGAffineTransform shift;
     switch (self.slideInDirection) {
         case RASlideInDirectionBottomToTop:
-            shift = CGAffineTransformMakeTranslation(0, -percetage);
+            shift = CGAffineTransformMakeTranslation(0, (1.f - percetage) * -_shiftBackDropViewValue);
             return shift;
         case RASlideInDirectionRightToLeft:
             shift = CGAffineTransformMakeTranslation((1.f - percetage) * -_shiftBackDropViewValue, 0);
             return shift;
         case RASlideInDirectionTopToBottom:
-            shift = CGAffineTransformMakeTranslation(0, percetage);
+            shift = CGAffineTransformMakeTranslation(0, (1.f - percetage) * _shiftBackDropViewValue);
             return shift;
         case RASlideInDirectionLeftToRight:
-            shift = CGAffineTransformMakeTranslation(percetage, 0);
+            shift = CGAffineTransformMakeTranslation((1.f - percetage) * _shiftBackDropViewValue, 0);
             return shift;
         default:
-            shift = CGAffineTransformMakeTranslation(0, -percetage);
+            shift = CGAffineTransformMakeTranslation(0, (1.f - percetage) * -_shiftBackDropViewValue);
             return shift;
     }
 }
@@ -308,9 +312,9 @@
 {
     [UIView animateWithDuration:_animationDuration delay:0.f options:UIViewAnimationOptionCurveEaseOut animations:^{
         self.view.transform = CGAffineTransformIdentity;
-        _backDropView.alpha = 0;
+        _backDropView.alpha = _backDropViewAlpha;
         CGAffineTransform transform;
-        if (!_shiftBackDropViewValue) {
+        if (!_shiftBackDropView) {
             transform = CGAffineTransformMakeScale(_backdropViewScaleReductionRatio, _backdropViewScaleReductionRatio);
         }else {
             CGAffineTransform scale = CGAffineTransformMakeScale(_backdropViewScaleReductionRatio, _backdropViewScaleReductionRatio);
@@ -319,7 +323,7 @@
         }
         _backDropView.transform = transform;
     }completion:^(BOOL finished){
-        self.view.window.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
+        self.view.window.backgroundColor = [UIColor colorWithWhite:0 alpha:1.f];
     }];
 }
 
@@ -339,7 +343,7 @@
         if (self.presentingViewController) {
             [self dismissViewControllerAnimated:NO completion:nil];
         }else {
-            self.view.window.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+            self.view.window.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
             self.view.window.hidden = YES;
         }
     }];
