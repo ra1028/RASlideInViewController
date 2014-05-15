@@ -50,12 +50,12 @@
 		2A1C58161911859B007013D2 /* RASlideInViewController-DemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RASlideInViewController-DemoTests-Info.plist"; sourceTree = "<group>"; };
 		2A1C58181911859B007013D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A1C581A1911859B007013D2 /* RASlideInViewController_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RASlideInViewController_DemoTests.m; sourceTree = "<group>"; };
-		2A1C5825191185AF007013D2 /* RANewSlideInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RANewSlideInViewController.h; path = "名称未設定フォルダ/RANewSlideInViewController.h"; sourceTree = "<group>"; };
-		2A1C5826191185AF007013D2 /* RANewSlideInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RANewSlideInViewController.m; path = "名称未設定フォルダ/RANewSlideInViewController.m"; sourceTree = "<group>"; };
+		2A1C5825191185AF007013D2 /* RANewSlideInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RANewSlideInViewController.h; path = RASlideInViewController/RANewSlideInViewController.h; sourceTree = "<group>"; };
+		2A1C5826191185AF007013D2 /* RANewSlideInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RANewSlideInViewController.m; path = RASlideInViewController/RANewSlideInViewController.m; sourceTree = "<group>"; };
 		2A1C5827191185AF007013D2 /* RASlideInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASlideInViewController.h; sourceTree = "<group>"; };
 		2A1C5828191185AF007013D2 /* RASlideInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RASlideInViewController.m; sourceTree = "<group>"; };
-		2A1C5829191185AF007013D2 /* RAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAViewController.h; path = "名称未設定フォルダ/RAViewController.h"; sourceTree = "<group>"; };
-		2A1C582A191185AF007013D2 /* RAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAViewController.m; path = "名称未設定フォルダ/RAViewController.m"; sourceTree = "<group>"; };
+		2A1C5829191185AF007013D2 /* RAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAViewController.h; path = RASlideInViewController/RAViewController.h; sourceTree = "<group>"; };
+		2A1C582A191185AF007013D2 /* RAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAViewController.m; path = RASlideInViewController/RAViewController.m; sourceTree = "<group>"; };
 		2A1C582E1911861B007013D2 /* RAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
 		2A1C582F1911861B007013D2 /* RAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
 		2A1C583119118674007013D2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				2A1C5828191185AF007013D2 /* RASlideInViewController.m */,
 			);
 			name = RASlideInViewController;
-			path = "RASlideInViewController-Demo/名称未設定フォルダ";
+			path = "RASlideInViewController-Demo/RASlideInViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -379,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -393,7 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RASlideInViewController-Demo/RASlideInViewController-Demo-Prefix.pch";
 				INFOPLIST_FILE = "RASlideInViewController-Demo/RASlideInViewController-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,7 +407,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RASlideInViewController-Demo/RASlideInViewController-Demo-Prefix.pch";
 				INFOPLIST_FILE = "RASlideInViewController-Demo/RASlideInViewController-Demo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -472,6 +472,7 @@
 				2A1C58201911859B007013D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A1C58211911859B007013D2 /* Build configuration list for PBXNativeTarget "RASlideInViewController-DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +481,7 @@
 				2A1C58231911859B007013D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
