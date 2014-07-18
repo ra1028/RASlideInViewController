@@ -29,6 +29,16 @@
     return self;
 }
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        //do any setup
+        [self initialSetup];
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

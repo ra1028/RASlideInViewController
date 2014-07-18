@@ -24,8 +24,9 @@
 
 - (IBAction)addNewView:(UIButton *)sender
 {
-    UIStoryboard *storyboard = self.storyboard;
-    RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
+//    UIStoryboard *storyboard = self.storyboard;
+//    RANewSlideInViewController *slideViewController = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([RANewSlideInViewController class])];
+    RANewSlideInViewController *slideViewController = [[RANewSlideInViewController alloc] init];
     
     self.modalPresentationStyle = UIModalPresentationCurrentContext;  //***
     
